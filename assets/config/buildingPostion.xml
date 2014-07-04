@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <build id="1" x="" y="" type="BuildingSpec" buildName="build1"/>
+    <build id="2" x="" y="" type="BuildingSpec" buildName="build2"/>
+    <build id="3" x="" y="" type="BuildingSpec" buildName="build3"/>
+    <build id="4" x="" y="" type="BuildingSpec" buildName="build4"/>
+    <build id="5" x="" y="" type="BuildingSpec" buildName="build5"/>
+    <build id="6" x="" y="" type="BuildingSpec" buildName="build6"/>
+</project>

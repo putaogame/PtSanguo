@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+    <item id="1" name="commenAssets" urlStr="assets/images/commonAssets.xml" urlPng="assets/images/commonAssets.png"/>
+    <item id="2" name="b" urlStr="assets/images/" urlPng="assets/images/"/>
+    <item id="3" name="c" urlStr="assets/images/" urlPng="assets/images/"/>
+    <item id="4" name="d" urlStr="assets/images/" urlPng="assets/images/"/>
+</project>

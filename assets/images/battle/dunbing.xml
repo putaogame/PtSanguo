@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:dac4042861cbb729e821840ebd661682:87c8db8584a7a1d28867cfcbb189e90e:473778d9d629344bc13aaf83f77d67b3$ -->
+<TextureAtlas imagePath="dunbing.png">
+    <SubTexture name="walks1" x="0" y="0" width="160" height="160" frameX="0" frameY="0" frameWidth="160" frameHeight="160"/>
+    <SubTexture name="walks2" x="160" y="0" width="160" height="160" frameX="0" frameY="0" frameWidth="160" frameHeight="160"/>
+    <SubTexture name="walks3" x="320" y="0" width="160" height="160" frameX="0" frameY="0" frameWidth="160" frameHeight="160"/>
+    <SubTexture name="walks4" x="480" y="0" width="160" height="160" frameX="0" frameY="0" frameWidth="160" frameHeight="160"/>
+    <SubTexture name="walks5" x="640" y="0" width="160" height="160" frameX="0" frameY="0" frameWidth="160" frameHeight="160"/>
+    <SubTexture name="walks6" x="800" y="0" width="160" height="160" frameX="0" frameY="0" frameWidth="160" frameHeight="160"/>
+    <SubTexture name="walks7" x="960" y="0" width="160" height="160" frameX="0" frameY="0" frameWidth="160" frameHeight="160"/>
+    <SubTexture name="walks8" x="1120" y="0" width="160" height="160" frameX="0" frameY="0" frameWidth="160" frameHeight="160"/>
+    <SubTexture name="attack1" x="0" y="160" width="160" height="160" frameX="0" frameY="0" frameWidth="160" frameHeight="160"/>
+    <SubTexture name="attack2" x="160" y="160" width="160" height="160" frameX="0" frameY="0" frameWidth="160" frameHeight="160"/>
+    <SubTexture name="attack3" x="320" y="160" width="160" height="160" frameX="0" frameY="0" frameWidth="160" frameHeight="160"/>
+    <SubTexture name="attack4" x="480" y="160" width="160" height="160" frameX="0" frameY="0" frameWidth="160" frameHeight="160"/>
+    <SubTexture name="attack5" x="640" y="160" width="160" height="160" frameX="0" frameY="0" frameWidth="160" frameHeight="160"/>
+    <SubTexture name="attack6" x="800" y="160" width="160" height="160" frameX="0" frameY="0" frameWidth="160" frameHeight="160"/>
+    <SubTexture name="attack7" x="960" y="160" width="160" height="160" frameX="0" frameY="0" frameWidth="160" frameHeight="160"/>
+    <SubTexture name="attack8" x="1120" y="160" width="160" height="160" frameX="0" frameY="0" frameWidth="160" frameHeight="160"/>
+    <SubTexture name="attack9" x="0" y="320" width="160" height="160" frameX="0" frameY="0" frameWidth="160" frameHeight="160"/>
+    <SubTexture name="attack10" x="160" y="320" width="160" height="160" frameX="0" frameY="0" frameWidth="160" frameHeight="160"/>
+</TextureAtlas>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <goods id="1" name="gun" type="2" description="shoot enemy" price="1000" resourceName="gunicon" textPackerName=""/>
+    <goods id="2" name="gun" type="2" description="shoot enemy" price="1000" resourceName="gunicon" textPackerName=""/>
+    <goods id="3" name="gun" type="2" description="shoot enemy" price="1000" resourceName="gunicon" textPackerName=""/>
+    <goods id="4" name="gun" type="2" description="shoot enemy" price="1000" resourceName="gunicon" textPackerName=""/>
+    <goods id="5" name="gun" type="2" description="shoot enemy" price="1000" resourceName="gunicon" textPackerName=""/>
+    <goods id="6" name="gun" type="2" description="shoot enemy" price="1000" resourceName="gunicon" textPackerName=""/>
+    <goods id="7" name="sword" type="2" description="cut enemy" price="2000" resourceName="swordicon" textPackerName=""/>
+    <goods id="8" name="sword" type="2" description="cut enemy" price="2000" resourceName="swordicon" textPackerName=""/>
+    <goods id="9" name="sword" type="2" description="cut enemy" price="2000" resourceName="swordicon" textPackerName=""/>
+    <goods id="10" name="sword" type="2" description="cut enemy" price="2000" resourceName="swordicon" textPackerName=""/>
+    <goods id="11" name="sword" type="2" description="cut enemy" price="2000" resourceName="swordicon" textPackerName=""/>
+    <goods id="12" name="sword" type="2" description="cut enemy" price="2000" resourceName="swordicon" textPackerName=""/>
+    <goods id="13" name="milk" type="5" description="increase strength" price="500" resourceName="milkicon" textPackerName=""/>
+    <goods id="14" name="milk" type="5" description="increase strength" price="500" resourceName="milkicon" textPackerName=""/>
+    <goods id="15" name="milk" type="5" description="increase strength" price="500" resourceName="milkicon" textPackerName=""/>
+    <goods id="16" name="milk" type="5" description="increase strength" price="500" resourceName="milkicon" textPackerName=""/>
+    <goods id="17" name="milk" type="5" description="increase strength" price="500" resourceName="milkicon" textPackerName=""/>
+    <goods id="18" name="milk" type="5" description="increase strength" price="500" resourceName="milkicon" textPackerName=""/>
+    <goods id="19" name="milk" type="5" description="increase strength" price="500" resourceName="milkicon" textPackerName=""/>
+    <goods id="20" name="milk" type="5" description="increase strength" price="500" resourceName="milkicon" textPackerName=""/>
+</project>
