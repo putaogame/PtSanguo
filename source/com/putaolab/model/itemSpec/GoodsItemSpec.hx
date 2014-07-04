@@ -1,4 +1,4 @@
-package com.putaolab.module;
+package com.putaolab.model.itemSpec;
 /**
  * User: gaoyun
  * Date: 14-7-1
@@ -15,6 +15,7 @@ class GoodsItemSpec extends ItemSpec {
 
 
     public function new() {
+        super();
     }
 
 

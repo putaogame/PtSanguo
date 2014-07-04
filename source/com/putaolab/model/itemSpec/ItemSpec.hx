@@ -1,4 +1,4 @@
-package com.putaolab.module;
+package com.putaolab.model.itemSpec;
 /**
  * User: gaoyun
  * Date: 14-7-1
@@ -9,8 +9,8 @@ package com.putaolab.module;
 class ItemSpec {
 
     public var id:String;
-    public var name:Int;
-    public var type:Int;
+    public var name:String;
+    public var type:String;
     public var description:String;
 
     public function new() {

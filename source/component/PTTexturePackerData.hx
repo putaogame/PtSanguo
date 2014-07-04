@@ -22,7 +22,7 @@ class PTTexturePackerData extends TexturePackerData{
     /**
 	 * Constructor
 	 *
-	 * @param	Description		Name of the bak.data file with atlas description
+	 * @param	Description		Name of the data file with atlas description
 	 * @param	AssetName		Name of the atlas image file
 	 */
     public function new(Description:String, AssetName:String)
@@ -36,15 +36,15 @@ class PTTexturePackerData extends TexturePackerData{
 	 */
     override public function parseData():Void
     {
-    // No need to parse bak.data again
+    // No need to parse data again
         if (frames.length != 0)	return;
 
         if ((assetName == null) || (description == null)) return;
 
         asset = FlxG.bitmap.add(assetName).bitmap;
-        var bak.data:Fast = new haxe.xml.Fast(Xml.parse(Assets.getText(description)).firstElement());
+        var data:Fast = new haxe.xml.Fast(Xml.parse(Assets.getText(description)).firstElement());
 
-        for (texture in bak.data.nodes.SubTexture)
+        for (texture in data.nodes.SubTexture)
         {
             var texFrame:TextureAtlasFrame = new TextureAtlasFrame();
             texFrame.trimmed = texture.has.frameX;

@@ -14,7 +14,7 @@ class BasePanel extends PTFlxUISubState implements IPanel{
     }
     override public function create():Void{
         super.create();
-        this.bak.data = getData();
+        this.data = getData();
         this.initialise();
     }
 

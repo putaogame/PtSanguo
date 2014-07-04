@@ -24,8 +24,8 @@ class PTFlxBaseListItem extends PTFlxUIGroup implements ICursorPointable{
     }
 
 
-    public function set_datas(bak.data:Dynamic):Dynamic{
-        _data = bak.data;
+    public function set_datas(data:Dynamic):Dynamic{
+        _data = data;
         return _data;
     }
     public function get_datas():Dynamic{

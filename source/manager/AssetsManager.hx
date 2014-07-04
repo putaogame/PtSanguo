@@ -1,5 +1,6 @@
 package manager;
 
+import component.PTTexturePackerData;
 import Array;
 import Array;
 import component.PTTexturePackerData;
@@ -77,7 +78,7 @@ class AssetsManager{
     }
 
     //得到当前的textPacker资源
-    public function getTextPackerData(textureName:String):TexturePackerData
+    public function getTextPackerData(textureName:String):PTTexturePackerData
     {
         _currentTextPackerData = cast(_textPackerMap.get(textureName),PTTexturePackerData);
         if(_currentTextPackerData == null){

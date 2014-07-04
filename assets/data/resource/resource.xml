@@ -1,13 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <resourceItem id="001" name="a" url="assets/sounds/soundall.OGG"/>
-    <resourceItem id="002" name="b" url="assets/sounds/soundall.OGG"/>
-    <resourceItem id="003" name="c" url="assets/sounds/soundall.OGG"/>
-    <resourceItem id="004" name="d" url="assets/sounds/soundall.OGG"/>
-
-    <resourceItem id="005" name="commenAssets" urlStr="assets/images/commonAssets.xml" urlPng="assets/images/commonAssets.png"/>
-    <resourceItem id="006" name="b" urlStr="assets/images/" urlPng="assets/images/"/>
-    <resourceItem id="007" name="c" urlStr="assets/images/" urlPng="assets/images/"/>
-    <resourceItem id="008" name="d" urlStr="assets/images/" urlPng="assets/images/"/>
-
+    <resourceItem id="005" name="texture1" imageUrl="assets/images/commonAssets.xml" xmlUrl="assets/images/commonAssets.png" type="ImageResource"/>
 </resources>

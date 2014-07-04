@@ -1,8 +1,7 @@
 package ;
 
-import bak.mainCity.AnalyzeBuildingPostion;
+import manager.ConfigFileManager;
 import manager.AssetsManager;
-import com.putaolab.module.backpack.GoodsModel;
 /**
  * User: gaoyun
  * Date: 14-7-2
@@ -13,15 +12,13 @@ import com.putaolab.module.backpack.GoodsModel;
 class MainClass {
     public function new() {
         initAssets();
-        initliseModel();
     }
 
     public function initAssets():Void{
-        AnalyzeBuildingPostion.getInstance().parseXmlElement("assets/bak.config/buildingPostion.xml");
+        ConfigFileManager.getInstance();
+
         AssetsManager.getInstance().setSparrowData("commenAssets","assets/images/commonAssets.xml","assets/images/commonAssets.png");
+
     }
 
-    public function initliseModel():Void{
-        GoodsModel.getInstance();
-    }
 }
