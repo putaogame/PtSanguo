@@ -1,6 +1,6 @@
 package manager;
 
-import com.putaolab.model.itemSpec.ResourceItemSpec;
+import com.putaolab.model.itemSpec.TextureItemSpec;
 import Array;
 import com.putaolab.model.itemSpec.BuildingItemSpec;
 import tools.Util;
@@ -24,7 +24,7 @@ class ConfigFileManager{
 
     private static var _instance:ConfigFileManager;
     public var buildingItemSpecs:Array<BuildingItemSpec>;
-    public var resourceItemSpecs:Array<ResourceItemSpec>;
+    public var textureItemSpecs:Array<TextureItemSpec>;
     private function new() {
         initialiseBuildingModel();
         initialiseResourceModel();
@@ -49,13 +49,21 @@ class ConfigFileManager{
     }
     private function initialiseResourceModel():Void{
         var fast:Fast = Util.getXMLFast("assets/data/resource/resource.xml");
-        resourceItemSpecs = new Array<ResourceItemSpec>();
+        textureItemSpecs = new Array<TextureItemSpec>();
         for(resource in fast.nodes.resourceItem){
-            var resourceItemSpec:ResourceItemSpec = new ResourceItemSpec(resource);
-            resourceItemSpecs.push(resourceItemSpec);
+            var resourceItemSpec:TextureItemSpec = new TextureItemSpec(resource);
+            textureItemSpecs.push(resourceItemSpec);
         }
     }
     private function initialiseGoodsModel():Void{
+
+    }
+    public function getTextureItemspecByScene(scene:String):Array{
+        var items:Array<TextureItemSpec> = new Array<TextureItemSpec>();
+        for(i in 0...){
+
+        }
+
 
     }
 

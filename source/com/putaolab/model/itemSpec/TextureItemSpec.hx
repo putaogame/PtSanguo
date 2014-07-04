@@ -8,15 +8,17 @@ package com.putaolab.model.itemSpec;
 
 import component.PTTexturePackerData;
 import haxe.xml.Fast;
-class ResourceItemSpec extends ItemSpec{
+class TextureItemSpec extends ItemSpec{
     public var imageUrl:String;
     public var xmlUrl:String;
+    public var scene:String;
     public function new(data:Fast) {
         super();
         id = data.att.id;
         name = data.att.name;
         imageUrl = data.att.imageUrl;
         xmlUrl = data.att.xmlUrl;
+        scene = data.att.scene;
         type = data.att.type;
     }
     public function getTextureData():PTTexturePackerData{

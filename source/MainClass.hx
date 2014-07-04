@@ -15,9 +15,10 @@ class MainClass {
     }
 
     public function initAssets():Void{
+        //priority 1
         ConfigFileManager.getInstance();
-
-        AssetsManager.getInstance().setSparrowData("commenAssets","assets/images/commonAssets.xml","assets/images/commonAssets.png");
+        //priority 2
+        AssetsManager.getInstance();
 
     }
 
