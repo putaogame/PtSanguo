@@ -1,4 +1,4 @@
-package battle.charater;
+package com.putaolab.battle.charater;
 
 import flixel.group.FlxSpriteGroup;
 

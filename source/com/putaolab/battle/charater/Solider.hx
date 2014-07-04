@@ -1,4 +1,4 @@
-package battle.charater;
+package com.putaolab.battle.charater;
 
 import flixel.util.FlxRandom;
 import flixel.FlxObject;

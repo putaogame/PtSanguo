@@ -1,4 +1,4 @@
-package com.putaolab.module.backpack;
+package com.putaolab.view.list.itemrender;
 
 import flixel.util.FlxColor;
 import manager.AssetsManager;

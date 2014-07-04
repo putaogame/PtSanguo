@@ -6,11 +6,8 @@ package com.putaolab.module;
  * description：
  */
 
-class GoodsItemSpec {
+class GoodsItemSpec extends ItemSpec {
 
-    public var id:Int;
-    public var name:String;
-    public var type:String;
     public var description:String;
     public var price:String;
     public var resourceName:String;

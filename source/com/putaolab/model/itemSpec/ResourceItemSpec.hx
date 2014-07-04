@@ -6,7 +6,7 @@ package com.putaolab.module;
  * description：
  */
 
-class BuildingItemSpec extends ItemSpec{
+class ResourceItemSpec extends ItemSpec{
 
     public function new() {
     }

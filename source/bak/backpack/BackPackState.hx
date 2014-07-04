@@ -11,7 +11,7 @@ import com.putaolab.module.backpack.GoodsVO;
 import tools.LogUtil;
 import component.PTFlxUIState;
 import component.PTFlxUIButton;
-import com.putaolab.list.PanelList;
+import com.putaolab.view.list.PanelList;
 import com.putaolab.module.backpack.GoodsItem;
 import com.putaolab.list.BaseItem;
 import flixel.FlxSprite;

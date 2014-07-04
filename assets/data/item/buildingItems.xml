@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildings>
+    <buildingItem id="1" x="0" y="0" type="BuildingItemSpec" name="build1"/>
+    <buildingItem id="2" x="0" y="0" type="BuildingItemSpec" name="build2"/>
+    <buildingItem id="3" x="0" y="0" type="BuildingItemSpec" name="build3"/>
+    <buildingItem id="4" x="0" y="0" type="BuildingItemSpec" name="build4"/>
+    <buildingItem id="5" x="0" y="0" type="BuildingItemSpec" name="build5"/>
+    <buildingItem id="6" x="0" y="0" type="BuildingItemSpec" name="build6"/>
+</buildings>

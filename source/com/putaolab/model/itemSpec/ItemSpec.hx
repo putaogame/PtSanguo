@@ -6,9 +6,15 @@ package com.putaolab.module;
  * description：
  */
 
-class BuildingItemSpec extends ItemSpec{
+class ItemSpec {
+
+    public var id:String;
+    public var name:Int;
+    public var type:Int;
+    public var description:String;
 
     public function new() {
     }
+
 
 }

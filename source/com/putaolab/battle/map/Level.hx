@@ -1,4 +1,4 @@
-package battle.map;
+package com.putaolab.battle.map;
 
 //import entities.Character;
 import flixel.FlxBasic;

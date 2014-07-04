@@ -1,12 +1,12 @@
 package com.putaolab.view.scene;
 
-import battle.charater.TroopLeft;
-import battle.charater.TroopRight;
+import com.putaolab.battle.charater.TroopLeft;
+import com.putaolab.battle.charater.TroopRight;
 import manager.AssetsManager;
-import battle.charater.Troop;
-import battle.map.Level;
+import com.putaolab.battle.charater.Troop;
+import com.putaolab.battle.map.Level;
 import flixel.FlxState;
-import battle.map.Level;
+import com.putaolab.battle.map.Level;
 
 
 class BattleState extends FlxState
@@ -17,8 +17,8 @@ class BattleState extends FlxState
 
 	override public function create():Void
 	{
-        AssetsManager.getInstance().setSparrowData("jibing","assets/images/battle/jibing.xml","assets/images/battle/jibing.png");
-        AssetsManager.getInstance().setSparrowData("dunbing","assets/images/battle/dunbing.xml","assets/images/battle/dunbing.png");
+        AssetsManager.getInstance().setSparrowData("jibing","assets/images/com.putaolab.battle/jibing.xml","assets/images/com.putaolab.battle/jibing.png");
+        AssetsManager.getInstance().setSparrowData("dunbing","assets/images/com.putaolab.battle/dunbing.xml","assets/images/com.putaolab.battle/dunbing.png");
 
         level = new Level("assets/maps/test2.tmx", "assets/maps/test2.tanim");
         add(level.backgroundGroup);

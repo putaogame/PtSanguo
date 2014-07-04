@@ -1,4 +1,4 @@
-package battle.map;
+package com.putaolab.battle.map;
 
 import flixel.addons.tile.FlxTileSpecial;
 import haxe.xml.Fast;
