@@ -72,12 +72,6 @@ class TextureManager{
                 t.destroy();
             }
     }
-//
-//    public function setSparrowData(xmlName:String,xmlstr:String,pngstr:String):Void
-//    {
-//        _currentTextPackerData = new PTTexturePackerData(xmlstr,pngstr);
-//        _textPackerMap.set(xmlName,_currentTextPackerData);
-//    }
 
     /*根据资源名字得到指定的资源*/
     public function getSpriteWithTexture(name:String,textureName:String):FlxSprite

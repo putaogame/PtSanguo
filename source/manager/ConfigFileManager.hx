@@ -27,7 +27,7 @@ class ConfigFileManager{
     public var textureItemSpecs:Array<TextureItemSpec>;
     private function new() {
         initialiseBuildingModel();
-        initialiseResourceModel();
+        initialiseTextureModel();
         initialiseGoodsModel();
     }
 
@@ -47,7 +47,7 @@ class ConfigFileManager{
             buildingItemSpecs.push(buildingItemSpec);
         }
     }
-    private function initialiseResourceModel():Void{
+    private function initialiseTextureModel():Void{
         var fast:Fast = Util.getXMLFast("assets/data/resource/resource.xml");
         textureItemSpecs = new Array<TextureItemSpec>();
         for(resource in fast.nodes.resourceItem){
@@ -58,14 +58,15 @@ class ConfigFileManager{
     private function initialiseGoodsModel():Void{
 
     }
-    public function getTextureItemspecByScene(scene:String):Array{
-        var items:Array<TextureItemSpec> = new Array<TextureItemSpec>();
-        for(i in 0...){
 
-        }
-
-
-    }
+//    public function getTextureItemspecByScene(scene:String):Array{
+//        var items:Array<TextureItemSpec> = new Array<TextureItemSpec>();
+//        for(i in 0...){
+//
+//        }
+//
+//
+//    }
 
 
 
