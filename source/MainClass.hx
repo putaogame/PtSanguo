@@ -1,6 +1,6 @@
 package ;
 
-import mainCity.AnalyzeBuildingPostion;
+import bak.mainCity.AnalyzeBuildingPostion;
 import manager.AssetsManager;
 import com.putaolab.module.backpack.GoodsModel;
 /**

@@ -1,4 +1,4 @@
-package;
+package com.putaolab.view.scene;
 
 import battle.charater.TroopLeft;
 import battle.charater.TroopRight;

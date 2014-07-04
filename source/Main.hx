@@ -1,5 +1,6 @@
 package;
 
+import com.putaolab.view.scene.BattleState;
 import flash.display.Sprite;
 import flash.display.StageAlign;
 import flash.display.StageScaleMode;

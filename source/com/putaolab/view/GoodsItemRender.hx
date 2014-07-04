@@ -11,7 +11,7 @@ import com.putaolab.list.BaseItem;
  * description：
  */
 
-class GoodsItem extends BaseItem{
+class GoodsItemRender extends BaseItem{
     private var _sp:FlxSprite;
     private var _goodsVO:GoodsVO;
     private var _goodsItemVO:GoodsItemVO;

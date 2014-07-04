@@ -20,8 +20,8 @@ class PanelList extends PTFlxUIGroup{
     private var _columnSpace:Int = Reg.columnSpace;
     private var _prevButton:IFlxUIButton;
     private var _nextButton:IFlxUIButton;
-    private var _itemArr:Array<BaseItem>;
-    private var _currentItemArr:Array<BaseItem>;
+    private var _itemArr:Array<BaseItemRender>;
+    private var _currentItemArr:Array<BaseItemRender>;
 
     public function new(X:Int,Y:Int,row:Int,column:Int) {
         super(X, Y);
@@ -76,7 +76,7 @@ class PanelList extends PTFlxUIGroup{
         }
     }
 
-    public function setDatas(datas:Array<BaseItem>):Void{
+    public function setDatas(datas:Array<BaseItemRender>):Void{
         _itemArr = datas;
     }
 }

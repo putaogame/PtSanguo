@@ -1,4 +1,4 @@
-package ;
+package com.putaolab.view.scene;
 
 
 import component.PTFlxUIButton;

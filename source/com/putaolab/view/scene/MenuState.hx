@@ -1,6 +1,6 @@
-package;
+package com.putaolab.view.scene;
 
-import mainCity.MainCityState;
+import bak.mainCity.MainCityState;
 import flixel.FlxG;
 import component.PTFlxUIState;
 

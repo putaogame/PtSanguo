@@ -9,7 +9,7 @@ import flixel.FlxSprite;
  * description：
  */
 
-class BaseItem extends PTFlxUIGroup{
+class BaseItemRender extends PTFlxUIGroup{
     public var name:String;
     public var type:String;
 
