@@ -7,6 +7,6 @@ package com.putaolab;
  */
 
 interface IScene {
-    public var data:Dynamic;
+    public var bak.data:Dynamic;
     private function getData():Dynamic;
 }

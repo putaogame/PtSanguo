@@ -30,7 +30,7 @@ class MenuState extends PTFlxUIState
     {
         super.update();
     }
-    override public function getEvent(id:String, target:Dynamic, data:Dynamic, ?params:Array<Dynamic>):Void{
+    override public function getEvent(id:String, target:Dynamic, bak.data:Dynamic, ?params:Array<Dynamic>):Void{
         if (params != null) {
             switch(id) {
                 case "click_button":

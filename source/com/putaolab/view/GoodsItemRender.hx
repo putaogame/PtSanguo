@@ -16,9 +16,9 @@ class GoodsItemRender extends BaseItem{
     private var _goodsVO:GoodsVO;
     private var _goodsItemVO:GoodsItemVO;
 
-    public function new(X:Float = 0,Y:Float = 0,?data:Dynamic,?Params:Array<Dynamic>,?Callback:Void->Void) {
-        super(X,Y,data,Params,Callback);
-        _goodsVO = cast(data,GoodsVO);
+    public function new(X:Float = 0,Y:Float = 0,?bak.data:Dynamic,?Params:Array<Dynamic>,?Callback:Void->Void) {
+        super(X,Y, bak.data,Params,Callback);
+        _goodsVO = cast(bak.data,GoodsVO);
     }
 
 

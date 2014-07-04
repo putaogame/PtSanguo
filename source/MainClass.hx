@@ -17,7 +17,7 @@ class MainClass {
     }
 
     public function initAssets():Void{
-        AnalyzeBuildingPostion.getInstance().parseXmlElement("assets/config/buildingPostion.xml");
+        AnalyzeBuildingPostion.getInstance().parseXmlElement("assets/bak.config/buildingPostion.xml");
         AssetsManager.getInstance().setSparrowData("commenAssets","assets/images/commonAssets.xml","assets/images/commonAssets.png");
     }
 

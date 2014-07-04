@@ -45,17 +45,17 @@ class PTFlxUISubState extends FlxUISubState{
 
             _ui.getTextFallback = getTextFallback;
 
-            var data:Fast = U.xml(_xml_id);
-            if (data == null) {
-                data = U.xml(_xml_id, "xml", true, "");	//try without default directory prepend
+            var bak.data:Fast = U.xml(_xml_id);
+            if (bak.data == null) {
+                bak.data = U.xml(_xml_id, "xml", true, "");	//try without default directory prepend
             }
 
-            if (data == null) {
+            if (bak.data == null) {
             #if debug
 				FlxG.log.error("FlxUISubstate: Could not load _xml_id \"" + _xml_id + "\"");
 			#end
             }else{
-                _ui.load(data);
+                _ui.load(bak.data);
             }
         }
 

@@ -14,7 +14,7 @@ class PTFlxUIGroup extends FlxUIGroup implements IFlxUIClickable implements IHas
 {
     public var button:PTFlxUIButton;
     public var params(default, set):Array<Dynamic>;
-    public var data(default, set):Dynamic;
+    public var bak.data(default, set):Dynamic;
     public var skipButtonUpdate(default, set):Bool = false;
     public var callback:Void->Void;
     private var _dirty:Bool;
@@ -35,8 +35,8 @@ class PTFlxUIGroup extends FlxUIGroup implements IFlxUIClickable implements IHas
         return params;
     }
     private function set_data(d:Dynamic):Dynamic{
-        data = d;
-        return data;
+        bak.data = d;
+        return bak.data;
     }
 
     public function new(X:Float = 0,Y:Float = 0,?Data:Dynamic,?Params:Array<Dynamic>,?Callback:Void->Void)
@@ -44,7 +44,7 @@ class PTFlxUIGroup extends FlxUIGroup implements IFlxUIClickable implements IHas
         super(X,Y);
         _dirty = true;
         callback = Callback;
-        data = Data;
+        bak.data = Data;
         params = Params;
         button = new PTFlxUIButton(0, 0, null, _clickCheck);
         //set default checkbox label format
@@ -101,7 +101,7 @@ class PTFlxUIGroup extends FlxUIGroup implements IFlxUIClickable implements IHas
             callback();
         }
         if(broadcastToFlxUI){
-            FlxUI.event(CLICK_EVENT, this, data, params);
+            FlxUI.event(CLICK_EVENT, this, bak.data, params);
         }
     }
 

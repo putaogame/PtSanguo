@@ -31,7 +31,7 @@ class GoodsModel {
         if(_goods == null){
             _goods = new Array<GoodsVO>();
         }
-        var fast:Fast = Util.getXMLFast("assets/data/backpack.xml");
+        var fast:Fast = Util.getXMLFast("assets/bak.data/backpack.xml");
         for(goods in fast.nodes.goods){
             var goodsvo:GoodsVO = new GoodsVO();
             goodsvo.id = Std.parseInt(goods.att.id);

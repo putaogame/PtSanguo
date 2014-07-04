@@ -14,13 +14,13 @@ class LogUtil {
     public function new() {
     }
 
-    public static function log(data:Dynamic, color:Int = -1):Void{
+    public static function log(bak.data:Dynamic, color:Int = -1):Void{
 //        trace("isLog : "+isLog);
         if(isLog){
             DC.init(1);
-            DC.log(data,color);
+            DC.log(bak.data,color);
         }else{
-            trace(data);
+            trace(bak.data);
         }
     }
     public static function registerFunction(Function:Dynamic, alias:String):Void{

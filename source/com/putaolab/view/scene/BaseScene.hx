@@ -13,7 +13,7 @@ class BaseScene extends PTFlxUIState implements IScene {
     }
     override public function create():Void{
         super.create();
-        this.data = getData();
+        this.bak.data = getData();
         this.initialise();
     }
     private function getData():Dynamic{

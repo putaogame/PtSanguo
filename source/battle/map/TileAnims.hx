@@ -60,7 +60,7 @@ class TileAnims
 					if (animation.has.randomizeSpeed) {
 						randomizeSpeed = Std.parseFloat(animation.att.randomizeSpeed);
 					}
-					var data:AnimData = {
+					var bak.data:AnimData = {
 						name: name,
 						speed: Std.parseFloat(animation.att.speed),
 						randomizeSpeed: randomizeSpeed,
@@ -68,7 +68,7 @@ class TileAnims
 						framesData: new Array<AnimParams>() 
 					};
 					for (frame in animation.nodes.frame) {
-						data.frames.push(Std.parseInt(frame.att.id) + firstGID);
+						bak.data.frames.push(Std.parseInt(frame.att.id) + firstGID);
 						if (frame.has.flipHorizontal || frame.has.flipVertical || frame.has.rotation) {
 							var params:AnimParams = {
 								flipHorizontal: false,
@@ -94,13 +94,13 @@ class TileAnims
 								}
 							}
 							
-							data.framesData.push(params);
+							bak.data.framesData.push(params);
 						} else {
-							data.framesData.push(null);
+							bak.data.framesData.push(null);
 						}
 					}
 					
-					animsData.push(data);
+					animsData.push(bak.data);
 				}
 				
 				anims.set(startTileID, animsData);

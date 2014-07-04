@@ -92,8 +92,8 @@ class BackPackState extends PTFlxUIState{
         var goods:Array<GoodsItemVO> = GoodsManager.getInstance().getHaveGoods();
         LogUtil.log("initialise : "+goods.length);
         for(i in 0...goods.length){
-            var data:GoodsVO = GoodsManager.getInstance().getGoodsVo(goods[i].id);
-            var goodsItem:GoodsItem = new GoodsItem(0,0,data,[goods[i].id+""]);
+            var bak.data:GoodsVO = GoodsManager.getInstance().getGoodsVo(goods[i].id);
+            var goodsItem:GoodsItem = new GoodsItem(0,0, bak.data,[goods[i].id+""]);
             goodsItem.setData(goods[i]);
             goodsItem.initialise();
             itemArr.push(goodsItem);
@@ -142,7 +142,7 @@ class BackPackState extends PTFlxUIState{
     {
         super.update();
     }
-    override public function getEvent(id:String, target:Dynamic, data:Dynamic, ?params:Array<Dynamic>):Void{
+    override public function getEvent(id:String, target:Dynamic, bak.data:Dynamic, ?params:Array<Dynamic>):Void{
         if (params != null) {
             switch(id) {
                 case "click_button":
@@ -167,7 +167,7 @@ class BackPackState extends PTFlxUIState{
                         ShowPropertyPanel();
                         _isHavePropertyPanel = true;
                     }
-                    LogUtil.log("click_PTFlxUIGroup:"+params+" : "+cast(data,GoodsVO).name+" : "+cast(data,GoodsVO).description);
+                    LogUtil.log("click_PTFlxUIGroup:"+params+" : "+cast(bak.data,GoodsVO).name+" : "+cast(bak.data,GoodsVO).description);
             }
         }
     }
