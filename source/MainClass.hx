@@ -17,6 +17,7 @@ class MainClass {
     }
 
     public function start():Void{
+
         //priority 1
         ConfigFileManager.getInstance();
         //priority 2
