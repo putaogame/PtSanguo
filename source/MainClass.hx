@@ -1,7 +1,9 @@
 package ;
 
+import com.engine.core.UIManager;
+import com.engine.core.Common;
 import manager.ConfigFileManager;
-import manager.AssetsManager;
+import manager.TextureManager;
 /**
  * User: gaoyun
  * Date: 14-7-2
@@ -11,15 +13,16 @@ import manager.AssetsManager;
 
 class MainClass {
     public function new() {
-        initAssets();
+        start();
     }
 
-    public function initAssets():Void{
+    public function start():Void{
         //priority 1
         ConfigFileManager.getInstance();
         //priority 2
-        AssetsManager.getInstance();
-
+        TextureManager.getInstance();
+        //priority 3
+        Common.ui = UIManager.getInstance();
     }
 
 }

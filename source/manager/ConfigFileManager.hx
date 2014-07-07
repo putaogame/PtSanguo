@@ -48,7 +48,7 @@ class ConfigFileManager{
         }
     }
     private function initialiseTextureModel():Void{
-        var fast:Fast = Util.getXMLFast("assets/data/resource/resource.xml");
+        var fast:Fast = Util.getXMLFast("assets/data/resource/texture.xml");
         textureItemSpecs = new Array<TextureItemSpec>();
         for(resource in fast.nodes.resourceItem){
             var resourceItemSpec:TextureItemSpec = new TextureItemSpec(resource);

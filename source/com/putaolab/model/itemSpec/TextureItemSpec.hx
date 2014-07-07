@@ -23,7 +23,7 @@ class TextureItemSpec extends ItemSpec{
     }
     public function getTextureData():PTTexturePackerData{
         if(type == "ImageResource"){
-            return new PTTexturePackerData(xmlUrl,imageUrl);
+            return new PTTexturePackerData(xmlUrl,imageUrl,name);
         }
         return null;
 

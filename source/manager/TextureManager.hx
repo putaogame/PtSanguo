@@ -26,7 +26,7 @@ class TextureManager{
 
 
 
-    private static var _instance:AssetsManager;
+    private static var _instance:TextureManager;
     private var _textures:Array<PTTexturePackerData>;
     private var _publicTexture:PTTexturePackerData;
     private var _loadingTexture:PTTexturePackerData;
@@ -35,11 +35,11 @@ class TextureManager{
         _textures = new Array<PTTexturePackerData>();
         initPublicTexture();
     }
-    public static function getInstance():AssetsManager
+    public static function getInstance():TextureManager
     {
         if(_instance == null)
         {
-            _instance = new AssetsManager();
+            _instance = new TextureManager();
         }
         return _instance;
     }
@@ -105,8 +105,6 @@ class TextureManager{
          }
 
      }
-
-
 
     //得到当前的textPacker资源
     public function getTextPackerData(textureName:String):PTTexturePackerData
