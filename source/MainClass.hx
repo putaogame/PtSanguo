@@ -15,6 +15,7 @@ class MainClass {
     }
 
     public function initAssets():Void{
+    
         //priority 1
         ConfigFileManager.getInstance();
         //priority 2
