@@ -14,6 +14,7 @@ class Bag extends Window implements IWindow{
 	 */
     override public function create():Void
     {
+        name = DisplayConfig.WINDOW_BAG;
         super.create();
 //        FlxG.debugger.track("Test MainCity data: "+getData);
         DC.log("Test Bag data: "+getData);

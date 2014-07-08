@@ -33,4 +33,5 @@ class Scene extends PTFlxUIState implements IScene{
     public function setData(data:Dynamic):Void{
         this._data = data;
     }
+
 }
