@@ -29,21 +29,22 @@ class MainScene extends Scene {
 
     override public function create():Void{
         super.create();
+        name = DisplayConfig.SCENE_MAIN_CITY;
 //        FlxG.debugger.track("Test MainCity data: "+getData);
-//        DC.log("Test MainCity data: "+getData);
-//        var loadingBG:FlxSprite = new FlxSprite();
-//        loadingBG.loadGraphic("assets/images/city.jpg");
-//        add(loadingBG);
-//
-//        var btn:FlxButton = new FlxButton(50,50,"",onClick);
-//        btn.text = "BAG";
-//        add(btn);
-//
-//        MainCityController.getInstance();
-//        _cityData = BinderMainCity.getInstance().mainCityData;
-//        _bindUtil = BindUtils.bindSetter(setMoney,_cityData,"money");
-//
-//        MvcEventDispatcher.dispatchEvent(MainCityC.DISPATCHER_NAME,new GetCityInfoEvent(GetCityInfoEvent.EVENT_ID,"userid"));
+        DC.log("Test MainCity data: "+getData);
+        var loadingBG:FlxSprite = new FlxSprite();
+        loadingBG.loadGraphic("assets/images/city.jpg");
+        add(loadingBG);
+
+        var btn:FlxButton = new FlxButton(50,50,"",onClick);
+        btn.text = "BAG";
+        add(btn);
+
+        MainCityController.getInstance();
+        _cityData = BinderMainCity.getInstance().mainCityData;
+        _bindUtil = BindUtils.bindSetter(setMoney,_cityData,"money");
+
+        MvcEventDispatcher.dispatchEvent(MainCityC.DISPATCHER_NAME,new GetCityInfoEvent(GetCityInfoEvent.EVENT_ID,"userid"));
     }
 
     private var _coinBox:ValueBox;

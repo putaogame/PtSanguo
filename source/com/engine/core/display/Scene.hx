@@ -11,6 +11,7 @@ class Scene extends PTFlxUIState implements IScene{
     private var _uiLayer:FlxTypedGroup<FlxBasic>;
     private var _mainLayer:FlxTypedGroup<FlxBasic>;
     private var _backgroundLayer:FlxTypedGroup<FlxBasic>;
+    public var name:String;
     public function new() {
         super();
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <textures>
-    <textureItem id="001" name="texture1" scene="main" imageUrl="assets/images/commonAssets.xml" xmlUrl="assets/images/commonAssets.png" type="ImageResource"/>
+    <textureItem id="001" name="texture1" scene="MainCity" imageUrl="assets/images/commonAssets.xml" xmlUrl="assets/images/commonAssets.png" type="ImageResource"/>
     <textureItem id="002" name="texture2" scene="battle" imageUrl="assets/images/commonAssets.xml" xmlUrl="assets/images/commonAssets.png" type="ImageResource"/>
 </textures>
