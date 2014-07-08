@@ -32,12 +32,12 @@ class MainScene extends Scene {
 
     override public function create():Void{
         _makeCursor = true;
+        name = DisplayConfig.SCENE_MAIN_CITY;
         super.create();
         cursor.setDefaultKeys(FlxUICursor.KEYS_DEFAULT_ARROWS | FlxUICursor.KEYS_DEFAULT_TAB);
         initialiseBackground();
         initialiseBuilds();
         initialiseUI();
-
 
         var len:Int = cast(cursor,PTFlxUICursor).get_widgets().length;
         cursor.location = len-1;
@@ -45,9 +45,6 @@ class MainScene extends Scene {
 
 
     private function initialiseUI():Void{
-//        var btn:FlxButton = new FlxButton(50,50,"",onClick);
-//        btn.text = "BAG";
-//        add(btn);
         _coinBox = new CoinBox();
         _coinBox.setIcon("");
         _coinBox.setValue(0);

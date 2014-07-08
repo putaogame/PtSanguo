@@ -1,5 +1,7 @@
 package com.putaolab.game.module.mainCity.view;
 
+import manager.TextureManager;
+import flixel.FlxSprite;
 import com.putaolab.game.view.ValueBox;
 /**
  * User: gaoyun
@@ -9,11 +11,14 @@ import com.putaolab.game.view.ValueBox;
  */
 
 class CoinBox extends ValueBox{
+    private var _coinbg:FlxSprite;
+
     public function new() {
         super();
     }
 
     override public function initialise():Void{
-
+        _coinbg = TextureManager.getInstance().getSpriteWithTexture("button","texture0");
+        add(_coinbg);
     }
 }

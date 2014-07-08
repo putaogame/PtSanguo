@@ -1,7 +1,6 @@
 package com.vo;
 
-
-typedef GoodsItemInfo = { id:String, count:Float };
+typedef GoodsItemInfo = { id:String, count:Int};
 class GoodsInfo{
     public var buildings:Array<GoodsItemInfo>;
 

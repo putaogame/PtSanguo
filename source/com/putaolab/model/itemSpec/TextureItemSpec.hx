@@ -6,6 +6,7 @@ package com.putaolab.model.itemSpec;
  * description：
  */
 
+import tools.Util;
 import component.PTTexturePackerData;
 import haxe.xml.Fast;
 class TextureItemSpec extends ItemSpec{
@@ -22,6 +23,7 @@ class TextureItemSpec extends ItemSpec{
         type = data.att.type;
     }
     public function getTextureData():PTTexturePackerData{
+        Util.log("getTextureData():"+xmlUrl+imageUrl);
         if(type == "ImageResource"){
             return new PTTexturePackerData(xmlUrl,imageUrl,name);
         }

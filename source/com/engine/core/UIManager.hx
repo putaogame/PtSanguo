@@ -22,11 +22,10 @@ class UIManager implements IUIManager{
     }
     public function switchScene(sceneName:String,a_data:Dynamic):Void{
         _currScene = getSceneByName(sceneName);
-//        TextureManager.initTextureByScene(sceneName);
-
         judgeCurrScene();
-        if(_currScene == null) return;
 
+
+        if(_currScene == null) return;
         _currScene.setData(a_data);
         FlxG.switchState(_currScene);
     }

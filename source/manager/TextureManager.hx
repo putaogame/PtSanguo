@@ -55,8 +55,9 @@ class TextureManager{
             }
         }
     }
-    public function initTextureByScene(scene:String):Void{
-        destroyPreTexture();
+    public function initTextureByScene(scene:String,destroyPreTexture:Bool = true):Void{
+        if(destroyPreTexture)
+            this.destroyPreTexture();
 
         var textureItemSpecs:Array<TextureItemSpec> = ConfigFileManager.getInstance().textureItemSpecs;
         for(i in 0...textureItemSpecs.length){
@@ -65,12 +66,20 @@ class TextureManager{
             }
         }
     }
+    public inline function destroySpecifyedTexture(sceneName:String):Void{
+        for(t in _textures){
+            if(t.name == sceneName){
+                t.destroy();
+            }
+        }
+    }
     private inline function destroyPreTexture():Void{
-        if(_textures != null)
+        if(_textures != null){
             while(_textures.length > 0){
                 var t:PTTexturePackerData = _textures.pop();
                 t.destroy();
             }
+        }
     }
 
     /*根据资源名字得到指定的资源*/
