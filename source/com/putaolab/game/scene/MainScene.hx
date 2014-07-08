@@ -6,6 +6,7 @@ package com.putaolab.game.scene;
  * description：主场景
  */
 
+import manager.TextureManager;
 import com.putaolab.game.view.ValueBox;
 import com.putaolab.game.module.mainCity.view.BaseBuild;
 import com.putaolab.game.module.mainCity.view.Head;
@@ -31,21 +32,26 @@ class MainScene extends Scene {
         name = DisplayConfig.SCENE_MAIN_CITY;
         super.create();
 
-//        FlxG.debugger.track("Test MainCity data: "+getData);
-        DC.log("Test MainCity data: "+getData);
-        var loadingBG:FlxSprite = new FlxSprite();
-        loadingBG.loadGraphic("assets/images/city.jpg");
-        add(loadingBG);
 
-        var btn:FlxButton = new FlxButton(50,50,"",onClick);
-        btn.text = "BAG";
-        add(btn);
 
-        MainCityController.getInstance();
-        _cityData = BinderMainCity.getInstance().mainCityData;
-        _bindUtil = BindUtils.bindSetter(setMoney,_cityData,"money");
+        var s:FlxSprite = new FlxSprite();
+        TextureManager.getInstance().uploadTextureToSprite(s,"build1","texture1");
+        add(s);
 
-        MvcEventDispatcher.dispatchEvent(MainCityC.DISPATCHER_NAME,new GetCityInfoEvent(GetCityInfoEvent.EVENT_ID,"userid"));
+//        DC.log("Test MainCity data: "+getData);
+//        var loadingBG:FlxSprite = new FlxSprite();
+//        loadingBG.loadGraphic("assets/images/city.jpg");
+//        add(loadingBG);
+//
+//        var btn:FlxButton = new FlxButton(50,50,"",onClick);
+//        btn.text = "BAG";
+//        add(btn);
+//
+//        MainCityController.getInstance();
+//        _cityData = BinderMainCity.getInstance().mainCityData;
+//        _bindUtil = BindUtils.bindSetter(setMoney,_cityData,"money");
+//
+//        MvcEventDispatcher.dispatchEvent(MainCityC.DISPATCHER_NAME,new GetCityInfoEvent(GetCityInfoEvent.EVENT_ID,"userid"));
     }
 
     private var _coinBox:ValueBox;
@@ -75,7 +81,8 @@ class MainScene extends Scene {
     private function onClick():Void{
         DC.log("MainCity onClick()");
 //        Common.ui.openWindow(DisplayConfig.WINDOW_BAG,"");
-        Common.ui.switchScene(DisplayConfig.SCENE_MAIN_CITY,null);
+        //Common.ui.switchScene(DisplayConfig.SCENE_MAIN_CITY,null);
+        Common.ui.openWindow(DisplayConfig.WINDOW_BAG);
     }
 
 
