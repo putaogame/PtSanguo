@@ -1,5 +1,6 @@
 package;
 
+import pgr.dconsole.DC;
 import com.putaolab.game.scene.MainScene;
 import com.putaolab.game.scene.MenuState;
 import flash.display.Sprite;
@@ -47,10 +48,14 @@ class Main extends Sprite
 		{
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 		}
-		
-		setupGame();
 
+        testService();
+//		setupGame();
 	}
+    private function testService():Void{
+        DC.init(1);
+        DC.log("TEST SERVICE V1.0");
+    }
 	
 	private function setupGame():Void
 	{
