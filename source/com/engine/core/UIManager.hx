@@ -22,7 +22,7 @@ class UIManager implements IUIManager{
     }
     public function switchScene(sceneName:String,a_data:Dynamic):Void{
         _currScene = getSceneByName(sceneName);
-        TextureManager.initTextureByScene(sceneName);
+//        TextureManager.initTextureByScene(sceneName);
 
         judgeCurrScene();
         if(_currScene == null) return;

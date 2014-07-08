@@ -7,14 +7,12 @@ class Head extends PTFlxUIGroup {
     private var name:FlxSprite;
 
     private function new(data:BuildingItemSpec){
-        this._buildingItemSpec = data;
+        super();
     }
     private function initialise():Void {
 
     }
-    private function setBuildingSpec(data:BuildingItemSpec):Void {
-        this._buildingItemSpec = data;
-    }
+
 
 
 }

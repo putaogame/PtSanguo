@@ -8,7 +8,6 @@ package com.putaolab.model.itemSpec;
 
 class GoodsItemSpec extends ItemSpec {
 
-    public var description:String;
     public var price:String;
     public var resourceName:String;
     public var textPackerName:String;

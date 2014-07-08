@@ -14,7 +14,6 @@ class Window extends PTFlxUISubState implements IWindow{
     }
     public function getData():Dynamic{
         return _data;
-        Array<GoodsItemSpec>
     }
     public function setData(a_data:Dynamic):Void{
         this._data = a_data;
