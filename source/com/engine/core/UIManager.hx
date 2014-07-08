@@ -1,4 +1,5 @@
 package com.engine.core;
+import manager.TextureManager;
 import com.putaolab.game.scene.MainScene;
 import com.putaolab.game.DisplayConfig;
 import com.engine.core.display.Window;
@@ -21,6 +22,7 @@ class UIManager implements IUIManager{
     }
     public function switchScene(sceneName:String,a_data:Dynamic):Void{
         _currScene = getSceneByName(sceneName);
+        TextureManager.initTextureByScene(sceneName);
 
         judgeCurrScene();
         if(_currScene == null) return;

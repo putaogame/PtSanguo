@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <goods>
-    <goodsItem id="1" type="GoodsItemSpec" name="goods1"/>
+    <goodsItem id="1" goodsType="1" type="GoodsItemSpec" name="goods1"/>
     <goodsItem id="2" type="GoodsItemSpec" name="goods2"/>
     <goodsItem id="3" type="GoodsItemSpec" name="goods3"/>
     <goodsItem id="4" type="GoodsItemSpec" name="goods4"/>
