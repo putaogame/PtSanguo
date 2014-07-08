@@ -28,8 +28,9 @@ class MainScene extends Scene {
     private var _cityData:MainCityData;
 
     override public function create():Void{
-        super.create();
         name = DisplayConfig.SCENE_MAIN_CITY;
+        super.create();
+
 //        FlxG.debugger.track("Test MainCity data: "+getData);
         DC.log("Test MainCity data: "+getData);
         var loadingBG:FlxSprite = new FlxSprite();

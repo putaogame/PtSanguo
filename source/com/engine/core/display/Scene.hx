@@ -1,5 +1,6 @@
 package com.engine.core.display;
 
+import manager.TextureManager;
 import flixel.FlxBasic;
 import flixel.group.FlxTypedGroup;
 import component.PTFlxUIState;
@@ -17,6 +18,7 @@ class Scene extends PTFlxUIState implements IScene{
     }
     override public function create():Void{
         super.create();
+        TextureManager.getInstance().initTextureByScene(name);
         _uiLayer = new FlxTypedGroup<FlxBasic>();
         _mainLayer = new FlxTypedGroup<FlxBasic>();
         _backgroundLayer = new FlxTypedGroup<FlxBasic>();
