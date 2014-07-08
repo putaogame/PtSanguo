@@ -8,6 +8,7 @@ class BaseBuild extends PTFlxUIGroup {
     private var _nameTextField:FlxText;
 
     private function new(data:BuildingItemSpec){
+        super();
         this._buildingItemSpec = data;
     }
     private function initialise():Void {

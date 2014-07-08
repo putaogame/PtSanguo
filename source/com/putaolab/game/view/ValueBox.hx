@@ -1,4 +1,4 @@
-package com.putaolab.game.module.mainCity.binders;
+package com.putaolab.game.view;
 import flixel.FlxSprite;
 import flixel.addons.ui.FlxUIGroup;
 import com.putaolab.game.module.mainCity.data.MainCityData;
@@ -12,6 +12,7 @@ class ValueBox extends FlxUIGroup {
     private var _iconName:String;
 
     public function new() {
+    super();
     }
     private function initialise():Void{
 
