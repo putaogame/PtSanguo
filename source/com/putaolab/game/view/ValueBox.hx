@@ -12,15 +12,15 @@ class ValueBox extends FlxUIGroup {
     private var _iconName:String;
 
     public function new() {
-    super();
+        super();
     }
-    private function initialise():Void{
+    public function initialise():Void{
 
     }
-    private function setValue(value:Int):Void{
-
+    public function setValue(value:Int):Void{
+        _value = value;
     }
-    private function setIcon(iconName:String):Void{
+    public function setIcon(iconName:String):Void{
         _iconName = iconName;
     }
 
