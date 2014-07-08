@@ -1,5 +1,6 @@
 package;
 
+import com.service.test.ServiceTest;
 import pgr.dconsole.DC;
 import com.putaolab.game.scene.MainScene;
 import com.putaolab.game.scene.MenuState;
@@ -53,8 +54,7 @@ class Main extends Sprite
 //		setupGame();
 	}
     private function testService():Void{
-        DC.init(1);
-        DC.log("TEST SERVICE V1.0");
+        new ServiceTest();
     }
 	
 	private function setupGame():Void
