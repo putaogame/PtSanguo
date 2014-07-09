@@ -1,27 +1,43 @@
 package com.putaolab.game.view;
+import flixel.text.FlxText;
+import manager.TextureManager;
+import component.PTFlxUIGroup;
 import flixel.FlxSprite;
-import flixel.addons.ui.FlxUIGroup;
-import com.putaolab.game.module.mainCity.data.MainCityData;
 /*
 *     比如金币钻石     体力等框的基类
    *     * */
-class ValueBox extends FlxUIGroup {
+class ValueBox extends PTFlxUIGroup {
     private var _icon:FlxSprite;
+    private var _text:FlxText;
     private var _ValueString:String;
     private var _value:Int;
     private var _iconName:String;
 
+    private var _coinbg:FlxSprite;
+
     public function new() {
-    super();
+        super();
     }
-    private function initialise():Void{
 
+    public function initialise():Void{
+        _coinbg = TextureManager.getInstance().getSpriteWithTexture("button","texture0");
+        add(_coinbg);
     }
-    private function setValue(value:Int):Void{
 
+    public function setValue(value:Int):Void{
+        _value = value;
     }
-    private function setIcon(iconName:String):Void{
+
+    public function setValueString(valueString:String):Void{
+        _ValueString = valueString;
+    }
+
+    public function setIcon(iconName:String):Void{
         _iconName = iconName;
+    }
+
+    public function refresh():Void{
+
     }
 
 

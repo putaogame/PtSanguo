@@ -29,7 +29,7 @@ class Scene extends PTFlxUIState implements IScene{
         add(_backgroundLayer);
         add(_mainLayer);
         add(_uiLayer);
-
+        super.create();
     }
     public function getData():Dynamic{
         return _data;

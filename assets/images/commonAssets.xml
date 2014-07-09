@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker http://texturepacker.com-->
-<!-- $TexturePacker:SmartUpdate:7bdce12a75bb9c5a7de5a534c3e4effc$ -->
+<!-- $TexturePacker:SmartUpdate:f2a599b4c6ae1dca974caaa9622e1afd$ -->
 <TextureAtlas imagePath="commonAssets.png">
-    <SubTexture name="build1" x="304" y="712" width="300" height="277"/>
-    <SubTexture name="build2" x="194" y="424" width="300" height="286"/>
-    <SubTexture name="build3" x="606" y="2" width="300" height="274"/>
-    <SubTexture name="build4" x="2" y="806" width="300" height="203"/>
-    <SubTexture name="build5" x="606" y="278" width="300" height="225"/>
-    <SubTexture name="build6" x="606" y="505" width="293" height="220"/>
-    <SubTexture name="gunicon" x="484" y="124" width="120" height="120"/>
+    <SubTexture name="Email" x="606" y="2" width="120" height="100"/>
+    <SubTexture name="Generals" x="484" y="104" width="120" height="100"/>
+    <SubTexture name="bagpack" x="606" y="104" width="120" height="100"/>
+    <SubTexture name="build1" x="194" y="424" width="216" height="200"/>
+    <SubTexture name="build2" x="412" y="424" width="209" height="200"/>
+    <SubTexture name="build3" x="2" y="806" width="218" height="200"/>
+    <SubTexture name="build4" x="222" y="798" width="266" height="180"/>
+    <SubTexture name="build5" x="490" y="748" width="240" height="180"/>
+    <SubTexture name="build6" x="732" y="2" width="239" height="180"/>
+    <SubTexture name="buildNameBG" x="222" y="980" width="200" height="35"/>
+    <SubTexture name="button" x="194" y="748" width="129" height="48"/>
+    <SubTexture name="coinIcon" x="433" y="748" width="50" height="48"/>
+    <SubTexture name="everyDayActivity" x="560" y="626" width="122" height="100" frameX="0" frameY="0" frameWidth="126" frameHeight="100"/>
+    <SubTexture name="gemIcon" x="380" y="748" width="51" height="48"/>
+    <SubTexture name="gunicon" x="194" y="626" width="120" height="120"/>
     <SubTexture name="itemPropertyBG" x="2" y="424" width="190" height="380"/>
     <SubTexture name="listBG" x="2" y="2" width="480" height="420"/>
-    <SubTexture name="milkicon" x="484" y="2" width="120" height="120"/>
-    <SubTexture name="swordicon" x="484" y="246" width="120" height="120"/>
-    <SubTexture name="tabMenu" x="194" y="712" width="55" height="35"/>
+    <SubTexture name="milkicon" x="438" y="626" width="120" height="120"/>
+    <SubTexture name="signedIcon" x="490" y="930" width="60" height="60"/>
+    <SubTexture name="strengthIcon" x="325" y="748" width="53" height="48"/>
+    <SubTexture name="swordicon" x="316" y="626" width="120" height="120"/>
+    <SubTexture name="task" x="484" y="2" width="120" height="100"/>
 </TextureAtlas>
