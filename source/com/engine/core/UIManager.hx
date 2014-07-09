@@ -20,17 +20,16 @@ class UIManager implements IUIManager{
     private function new() {
 
     }
-    public function switchScene(sceneName:String,a_data:Dynamic):Void{
+    public function switchScene(sceneName:String,?a_data:Dynamic):Void{
         _currScene = getSceneByName(sceneName);
-//        TextureManager.initTextureByScene(sceneName);
-
         judgeCurrScene();
-        if(_currScene == null) return;
 
+
+        if(_currScene == null) return;
         _currScene.setData(a_data);
         FlxG.switchState(_currScene);
     }
-    public function openWindow(windowName:String,a_data:Dynamic):Void{
+    public function openWindow(windowName:String,?a_data:Dynamic):Void{
         _currWindow = getWindowByName(windowName);
 
         judgeCurrWindow();
@@ -39,7 +38,7 @@ class UIManager implements IUIManager{
         _currWindow.setData(a_data);
         _currScene.openSubState(_currWindow);
     }
-    public function openPanel(panelName:String,a_data:Dynamic):Void{
+    public function openPanel(panelName:String,?a_data:Dynamic):Void{
 
         _currPanel = getPanelByName(panelName);
 

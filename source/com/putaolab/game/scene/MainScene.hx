@@ -6,6 +6,7 @@ package com.putaolab.game.scene;
  * description：主场景
  */
 
+import manager.TextureManager;
 import com.putaolab.game.view.ValueBox;
 import com.putaolab.game.module.mainCity.view.BaseBuild;
 import com.putaolab.game.module.mainCity.view.Head;
@@ -28,8 +29,15 @@ class MainScene extends Scene {
     private var _cityData:MainCityData;
 
     override public function create():Void{
+        name = DisplayConfig.SCENE_MAIN_CITY;
         super.create();
-//        FlxG.debugger.track("Test MainCity data: "+getData);
+
+
+
+        var s:FlxSprite = new FlxSprite();
+        TextureManager.getInstance().uploadTextureToSprite(s,"build1","texture1");
+        add(s);
+
 //        DC.log("Test MainCity data: "+getData);
 //        var loadingBG:FlxSprite = new FlxSprite();
 //        loadingBG.loadGraphic("assets/images/city.jpg");
@@ -73,7 +81,8 @@ class MainScene extends Scene {
     private function onClick():Void{
         DC.log("MainCity onClick()");
 //        Common.ui.openWindow(DisplayConfig.WINDOW_BAG,"");
-        Common.ui.switchScene(DisplayConfig.SCENE_MAIN_CITY,null);
+        //Common.ui.switchScene(DisplayConfig.SCENE_MAIN_CITY,null);
+        Common.ui.openWindow(DisplayConfig.WINDOW_BAG);
     }
 
 

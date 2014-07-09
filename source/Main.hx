@@ -50,8 +50,8 @@ class Main extends Sprite
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 		}
 
-        testService();
-//		setupGame();
+//        testService();
+		setupGame();
 	}
     private function testService():Void{
         new ServiceTest();
