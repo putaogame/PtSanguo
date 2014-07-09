@@ -1,6 +1,5 @@
-package com.vo;
-
-class AccountInfo{
+package com.service.persistence.po;
+class AccountPO {
     public var coin:Int;
     public var diamond:Int;
     public var strength:Int;
@@ -12,6 +11,5 @@ class AccountInfo{
     public var head:String;
 
     public function new() {
-
     }
 }
