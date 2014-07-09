@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <buildings>
-    <buildingItem id="1" x="0" y="0" description="" type="BuildingItemSpec" name="build1"/>
-    <buildingItem id="2" x="0" y="0" description="" type="BuildingItemSpec" name="build2"/>
-    <buildingItem id="3" x="0" y="0" description="" type="BuildingItemSpec" name="build3"/>
-    <buildingItem id="4" x="0" y="0" description="" type="BuildingItemSpec" name="build4"/>
-    <buildingItem id="5" x="0" y="0" description="" type="BuildingItemSpec" name="build5"/>
-    <buildingItem id="6" x="0" y="0" description="" type="BuildingItemSpec" name="build6"/>
+    <buildingItem id="1" x="100" y="110" description="抽奖" type="BuildingItemSpec" name="build1"/>
+    <buildingItem id="2" x="450" y="110" description="征战天下" type="BuildingItemSpec" name="build2"/>
+    <buildingItem id="3" x="790" y="110" description="生死门" type="BuildingItemSpec" name="build3"/>
+    <buildingItem id="4" x="100" y="450" description="英雄试炼" type="BuildingItemSpec" name="build4"/>
+    <buildingItem id="5" x="450" y="450" description="竞技场" type="BuildingItemSpec" name="build5"/>
+    <buildingItem id="6" x="790" y="450" description="通天塔" type="BuildingItemSpec" name="build6"/>
 </buildings>

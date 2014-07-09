@@ -17,7 +17,6 @@ class Scene extends PTFlxUIState implements IScene{
         super();
     }
     override public function create():Void{
-        super.create();
         TextureManager.getInstance().initTextureByScene(name);
         _uiLayer = new FlxTypedGroup<FlxBasic>();
         _mainLayer = new FlxTypedGroup<FlxBasic>();
@@ -25,12 +24,12 @@ class Scene extends PTFlxUIState implements IScene{
         add(_backgroundLayer);
         add(_mainLayer);
         add(_uiLayer);
-
+        super.create();
     }
     public function getData():Dynamic{
         return _data;
     }
-    public function setData(data:Dynamic):Void{
+    public function setData(?data:Dynamic):Void{
         this._data = data;
     }
 

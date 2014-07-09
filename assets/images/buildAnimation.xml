@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:78e9b3923843e3d18e864c10859efd5c$ -->
+<TextureAtlas imagePath="buildAnimation.png">
+    <SubTexture name="build1Animation0001" x="2" y="2" width="228" height="166" frameX="0" frameY="0" frameWidth="228" frameHeight="200"/>
+    <SubTexture name="build1Animation0002" x="232" y="2" width="182" height="182" frameX="0" frameY="0" frameWidth="228" frameHeight="200"/>
+    <SubTexture name="build1Animation0003" x="164" y="338" width="140" height="160" frameX="-18" frameY="-40" frameWidth="228" frameHeight="200"/>
+    <SubTexture name="build2Animation0001" x="2" y="170" width="170" height="166"/>
+    <SubTexture name="build2Animation0002" x="2" y="338" width="160" height="160" frameX="0" frameY="0" frameWidth="170" frameHeight="166"/>
+    <SubTexture name="build2Animation0003" x="164" y="338" width="140" height="160" frameX="0" frameY="0" frameWidth="170" frameHeight="166"/>
+    <SubTexture name="build3Animation0001" x="2" y="170" width="170" height="166"/>
+    <SubTexture name="build3Animation0002" x="2" y="338" width="160" height="160" frameX="0" frameY="0" frameWidth="170" frameHeight="166"/>
+    <SubTexture name="build3Animation0003" x="164" y="338" width="140" height="160" frameX="0" frameY="0" frameWidth="170" frameHeight="166"/>
+    <SubTexture name="build4Animation0001" x="2" y="170" width="170" height="166"/>
+    <SubTexture name="build4Animation0002" x="2" y="338" width="160" height="160" frameX="0" frameY="0" frameWidth="170" frameHeight="166"/>
+    <SubTexture name="build4Animation0003" x="164" y="338" width="140" height="160" frameX="0" frameY="0" frameWidth="170" frameHeight="166"/>
+    <SubTexture name="build5Animation0001" x="2" y="170" width="170" height="166"/>
+    <SubTexture name="build5Animation0002" x="2" y="338" width="160" height="160" frameX="0" frameY="0" frameWidth="170" frameHeight="166"/>
+    <SubTexture name="build5Animation0003" x="164" y="338" width="140" height="160" frameX="0" frameY="0" frameWidth="170" frameHeight="166"/>
+    <SubTexture name="build6Animation0001" x="2" y="170" width="170" height="166"/>
+    <SubTexture name="build6Animation0002" x="2" y="338" width="160" height="160" frameX="0" frameY="0" frameWidth="170" frameHeight="166"/>
+    <SubTexture name="build6Animation0003" x="164" y="338" width="140" height="160" frameX="0" frameY="0" frameWidth="170" frameHeight="166"/>
+</TextureAtlas>

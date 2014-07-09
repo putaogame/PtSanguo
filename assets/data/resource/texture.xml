@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <textures>
-    <textureItem id="000" name="texture0" scene="public" imageUrl="assets/images/commonAssets.xml" xmlUrl="assets/images/commonAssets.png" type="ImageResource"/>
-    <textureItem id="001" name="texture1" scene="MainCity" imageUrl="assets/images/commonAssets.xml" xmlUrl="assets/images/commonAssets.png" type="ImageResource"/>
-    <textureItem id="002" name="texture2" scene="Bag" imageUrl="assets/images/commonAssets.xml" xmlUrl="assets/images/commonAssets.png" type="ImageResource"/>
+    <textureItem id="000" name="texture0" scene="public" imageUrl="assets/images/commonAssets.png" xmlUrl="assets/images/commonAssets.xml" type="ImageResource"/>
+    <textureItem id="001" name="texture1" scene="MainCity" imageUrl="assets/images/buildAnimation.png" xmlUrl="assets/images/buildAnimation.xml" type="ImageResource"/>
+    <textureItem id="002" name="texture2" scene="Bag" imageUrl="assets/images/commonAssets.png" xmlUrl="assets/images/commonAssets.xml" type="ImageResource"/>
 </textures>

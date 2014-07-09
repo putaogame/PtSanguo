@@ -1,24 +1,26 @@
-package com.putaolab.game.module.mainCity.binders;
+package com.putaolab.game.view;
+import manager.TextureManager;
+import component.PTFlxUIGroup;
 import flixel.text.FlxText;
 import flixel.FlxSprite;
-import flixel.addons.ui.FlxUIGroup;
-import com.putaolab.game.module.mainCity.data.MainCityData;
 /*
-*     比如金币钻石     体力等框的基类
+*
    *     * */
-class IconButton extends FlxUIGroup {
+class IconButton extends PTFlxUIGroup {
     private var _icon:FlxSprite;
+    private var _iconName:String;
     private var _text:String;
     private var _textField:FlxText;
 
     public function new() {
-
+        super();
     }
-    private function initialise():Void{
-
+    public function initialise():Void{
+        _icon = TextureManager.getInstance().getSpriteWithTexture(_iconName,"texture0");
+        add(_icon);
     }
 
-    private function setIcon(iconName:String):Void{
+    public function setIcon(iconName:String):Void{
         _iconName = iconName;
     }
 

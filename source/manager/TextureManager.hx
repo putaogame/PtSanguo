@@ -1,5 +1,6 @@
 package manager;
 
+import tools.Util;
 import com.putaolab.model.itemSpec.TextureItemSpec;
 import component.PTTexturePackerData;
 import component.PTTexturePackerData;
@@ -19,14 +20,9 @@ import flixel.FlxSprite;
 
 
 class TextureManager{
-    //当前用的资源
-    private var _currentTextPackerData:PTTexturePackerData;
-    private var _textPackerMap:Map<String,IFlxDestroyable> = new Map<String,IFlxDestroyable>();
-    private var _textPackerData:PTTexturePackerData;
-
-
 
     private static var _instance:TextureManager;
+    //
     private var _textures:Array<PTTexturePackerData>;
     private var _publicTexture:PTTexturePackerData;
     private var _loadingTexture:PTTexturePackerData;
@@ -47,9 +43,13 @@ class TextureManager{
         destroyPreTexture();
 
         var textureItemSpecs:Array<TextureItemSpec> = ConfigFileManager.getInstance().textureItemSpecs;
+        Util.log("initPublicTexture: textureItemSpecs.length    "+textureItemSpecs.length);
+
         for(i in 0...textureItemSpecs.length){
             if(textureItemSpecs[i].scene == "public"){
                 _publicTexture = textureItemSpecs[i].getTextureData();
+                Util.log("initPublicTexture: _publicTexture    ");
+                Util.log(_publicTexture);
             }else if(textureItemSpecs[i].scene == "loading"){
                 _loadingTexture = textureItemSpecs[i].getTextureData();
             }
@@ -58,20 +58,30 @@ class TextureManager{
     public function initTextureByScene(scene:String,destroyPreTexture:Bool = true):Void{
         if(destroyPreTexture)
             this.destroyPreTexture();
-
+        Util.log("initTextureByScene: scene  "+scene);
         var textureItemSpecs:Array<TextureItemSpec> = ConfigFileManager.getInstance().textureItemSpecs;
         for(i in 0...textureItemSpecs.length){
+            Util.log("textureItemSpecs[i].scene  "+textureItemSpecs[i].scene);
             if(textureItemSpecs[i].scene == scene ){
                 _textures.push(textureItemSpecs[i].getTextureData());
             }
         }
+
     }
     public inline function destroySpecifyedTexture(sceneName:String):Void{
-        for(t in _textures){
-            if(t.name == sceneName){
-                t.destroy();
+        var j:Int = 0;
+        for(i in 0..._textures.length){
+            if(j >= _textures.length){
+                break;
             }
+            if(_textures[j].name == sceneName){
+                _textures[j].destroy();
+                _textures.splice(j,1);
+                j--;
+            }
+            j++;
         }
+
     }
     private inline function destroyPreTexture():Void{
         if(_textures != null){
@@ -101,8 +111,7 @@ class TextureManager{
     }
     public function uploadTextureToSprite(sprite:FlxSprite,name:String,textureName:String):Void
     {
-        getTextPackerData(textureName);
-        sprite.loadGraphicFromTexture(_currentTextPackerData,false,name);
+        sprite.loadGraphicFromTexture(getTextPackerData(textureName),false,name);
     }
      public function uploadAnimationToSprite(sprite:FlxSprite,animationNames:Array<String>,prefixs:Array<String>,FrameRate:Int = 30, Looped:Bool = true,textureName:String):Void
      {
@@ -118,9 +127,10 @@ class TextureManager{
     //得到当前的textPacker资源
     public function getTextPackerData(textureName:String):PTTexturePackerData
     {
-          if(textureName == "public"){
+        Util.log("getTextPackerData  arg  :  "+textureName);
+          if(_publicTexture != null && _publicTexture.name == textureName){
             return _publicTexture;
-          }else if(textureName == "loading"){
+          }else if(_loadingTexture != null && _loadingTexture.name == textureName){
               return _loadingTexture;
           }
           for(i in 0..._textures.length){

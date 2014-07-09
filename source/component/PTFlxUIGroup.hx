@@ -47,6 +47,7 @@ class PTFlxUIGroup extends FlxUIGroup implements IFlxUIClickable implements IHas
         data = Data;
         params = Params;
         button = new PTFlxUIButton(0, 0, null, _clickCheck);
+        button.alpha = 0.001;
         //set default checkbox label format
 //        button.up_color = 0xffffff;
 //        button.down_color = 0xffffff;
@@ -88,10 +89,11 @@ class PTFlxUIGroup extends FlxUIGroup implements IFlxUIClickable implements IHas
     public override function update():Void{
         super.update();
     //更新按钮的宽高
-//        if (_dirty) {
-//            button.width = this.width;
-//            _dirty = false;
-//        }
+        if (_dirty) {
+            button.width = this.width;
+            button.height = this.height;
+            _dirty = false;
+        }
     }
 
     /*****PRIVATE******/
