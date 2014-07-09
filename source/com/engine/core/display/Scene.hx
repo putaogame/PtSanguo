@@ -18,7 +18,11 @@ class Scene extends PTFlxUIState implements IScene{
     }
     override public function create():Void{
         super.create();
+        if(UIManager.getInstance().getCurrentScene() == null){
+            UIManager.getInstance().setCurrentScene(this);
+        }
         TextureManager.getInstance().initTextureByScene(name);
+
         _uiLayer = new FlxTypedGroup<FlxBasic>();
         _mainLayer = new FlxTypedGroup<FlxBasic>();
         _backgroundLayer = new FlxTypedGroup<FlxBasic>();

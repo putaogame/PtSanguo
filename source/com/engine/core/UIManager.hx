@@ -38,6 +38,12 @@ class UIManager implements IUIManager{
         _currWindow.setData(a_data);
         _currScene.openSubState(_currWindow);
     }
+    public function setCurrentScene(scene:Scene):Void{
+        _currScene = scene;
+    }
+    public function getCurrentScene():Scene{
+        return _currScene;
+    }
     public function openPanel(panelName:String,?a_data:Dynamic):Void{
 
         _currPanel = getPanelByName(panelName);

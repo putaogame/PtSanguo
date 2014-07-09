@@ -26,9 +26,11 @@ class PTTexturePackerData extends TexturePackerData{
 	 * @param	AssetName		Name of the atlas image file
 	 */
     public var name:String;
-    public function new(Description:String, AssetName:String,name:String)
+    public var scene:String;
+    public function new(Description:String, AssetName:String,name:String,scene:String)
     {
         this.name = name;
+        this.scene = scene;
         super(Description, AssetName);
     }
 

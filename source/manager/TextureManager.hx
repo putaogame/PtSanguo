@@ -74,7 +74,9 @@ class TextureManager{
             if(j >= _textures.length){
                 break;
             }
-            if(_textures[j].name == sceneName){
+            Util.log("_textures[j].name:"+_textures[j].name);
+            if(_textures[j].scene == sceneName){
+                Util.log("destroy texttur");
                 _textures[j].destroy();
                 _textures.splice(j,1);
                 j--;

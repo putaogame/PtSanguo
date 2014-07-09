@@ -1,4 +1,5 @@
 package com.putaolab.game.module.bag;
+import manager.TextureManager;
 import com.engine.core.Common;
 import com.engine.core.display.Window;
 import com.engine.core.display.IWindow;
@@ -17,19 +18,20 @@ class Bag extends Window implements IWindow{
         name = DisplayConfig.WINDOW_BAG;
         super.create();
 //        FlxG.debugger.track("Test MainCity data: "+getData);
-        DC.log("Test Bag data: "+getData);
         var loadingBG:FlxSprite = new FlxSprite();
-        loadingBG.loadGraphic("assets/images/bag.jpg");
+        TextureManager.getInstance().uploadTextureToSprite(loadingBG,"build2","texture2");
         add(loadingBG);
 
         var btn:FlxButton = new FlxButton(50,50,"",onClick);
         btn.text = "CLOSE";
         add(btn);
+
     }
     private function onClick():Void{
         DC.log("Bag onClick()");
         Common.ui.closeWindow();
     }
+
     private function colseMyself():Void{
         Common.ui.closeWindow();
     }

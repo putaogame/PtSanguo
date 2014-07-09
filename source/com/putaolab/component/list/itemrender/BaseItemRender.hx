@@ -1,5 +1,6 @@
-package com.putaolab.componentlist.itemrender;
+package com.putaolab.component.list.itemrender;
 
+import flixel.addons.ui.interfaces.ICursorPointable;
 import component.PTFlxUIGroup;
 import flixel.FlxSprite;
 /**
@@ -9,11 +10,10 @@ import flixel.FlxSprite;
  * description：
  */
 
-class BaseItemRender extends PTFlxUIGroup{
-    public var name:String;
-    public var type:String;
-
-
+class BaseItemRender extends PTFlxUIGroup  implements ICursorPointable{
+    public var parent:BaseList;
+    public var column:Int;
+    public var row:Int;
     public function new(X:Float = 0,Y:Float = 0,?data:Dynamic,?Params:Array<Dynamic>,?Callback:Void->Void) {
         super(X,Y, data,Params,Callback);
     }

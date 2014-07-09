@@ -1,5 +1,6 @@
 package component;
 
+import com.putaolab.component.list.itemrender.BaseItemRender;
 import flixel.addons.ui.FlxUIButton;
 import flixel.addons.ui.FlxUI;
 import flixel.FlxG;
@@ -41,6 +42,20 @@ class PTFlxUICursor extends FlxUICursor
     }
 
     override private function _doInput(X:Int, Y:Int):Void {
+        //处理List滚动，焦点在上边界或者下边界，继续滚动时，将滚动list内容
+        if(Std.is(_widgets[location],BaseItemRender)){
+            var item:BaseItemRender = cast(_widgets[location],BaseItemRender);
+            var abort:Bool = false;
+            if(Y == 1 && item.parent.atLastRow(item)){
+                abort = item.parent.showNextRow();
+            }else if(Y == -1 && item.parent.atFirstRow(item)){
+                abort = item.parent.showPreviousRow();
+            }
+            if(abort)
+                return;
+
+        }
+
         super._doInput(X,Y);
 
         if(!_widgets[location].active || !_widgets[location].visible){
@@ -113,68 +128,7 @@ class PTFlxUICursor extends FlxUICursor
 //                    trace("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
                     break;
                 }
-
-
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//        var gamepadArray:Array<FlxGamepad> = FlxG.gamepads.getActiveGamepads();
-//        if(gamepadArray.length == 0){
-//            for(id in firstTimeMap.keys()){
-//                firstTimeMap.set(id,true);
-//            }
-//        }else{
-//            trace("----------------------------------------------bbbbbbbbbbbbbbb");
-//            for(i in 0...gamepadArray.length){
-//                var _gamePad:FlxGamepad = gamepadArray[i];
-//
-//                if(_gamePad == null)
-//                    continue;
-//
-//                var ft:Bool = firstTimeMap.exists(_gamePad.id)?firstTimeMap.get(_gamePad.id):true;
-////                trace("i-----",i);
-////                trace("_gamePad.id-----",_gamePad.id);
-////                trace("iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii");
-////                trace(ft);
-//                if(_gamePad.anyButton() && ft){
-//                    ft = false;
-////                    trace("_widgets.length----",_widgets.length);
-////                    trace("location-----------",location);
-//                    var currWidget:IFlxUIWidget = _widgets[location];
-//
-//                    FlxUI.event("click_button",currWidget,null,cast(currWidget,FlxUIButton).params);
-////                    trace("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
-//                    firstTimeMap.set(_gamePad.id,ft);
-//                    break;
-//                }
-//                if(!_gamePad.anyButton()){
-//                    ft = true;
-//                }
-////                trace("ft-------------------",ft);
-//                firstTimeMap.set(_gamePad.id,ft);
-//
-//            }
-//
-//        }
-
-
     }
 
 }

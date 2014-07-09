@@ -23,6 +23,7 @@ class Window extends PTFlxUISubState implements IWindow{
     }
     override public function close():Void{
         super.close();
+        trace("destroy: "+name);
         TextureManager.getInstance().destroySpecifyedTexture(name);
     }
 }
